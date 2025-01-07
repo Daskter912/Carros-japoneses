@@ -1,0 +1,29 @@
+{
+    "autos":[
+        {
+            "id":1,
+            "name":"Honda NSX",
+            "web":"https://www.reactjs.wiki/"
+        },
+        {
+            "id":2,
+            "name":"Honda Civic Type-R",
+            "web":"https//Angular.org"
+        },
+        {
+            "id":3,
+            "name":"Mazda RX-7",
+            "web":"https//Vue.org"
+        },
+        {
+            "id":4,
+            "name":"Mazda MX5",
+            "web":"https//polimer.org"
+        },
+        {
+            "id":5,
+            "name":"Toyota Supra",
+            "web":"https//svelve.org"
+        }
+    ]
+}
