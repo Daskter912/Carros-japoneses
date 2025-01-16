@@ -1,5 +1,5 @@
 import React from 'react'
-import ListaAutos from './helpers/ListaAutos.json'
+import ListaAutos from '../helpers/ListaAutos.json'
 
 
 function ElementoLista(props) {
