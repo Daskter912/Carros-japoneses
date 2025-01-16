@@ -37,7 +37,7 @@ export default function Header() {
     setAnchorElUser(null);
   };
   return (
-    <AppBar position="static">
+    <AppBar position="absolute" color='transparent' >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
