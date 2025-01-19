@@ -10,7 +10,6 @@ import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import Aside from './Aside';
-import Drawer from '@mui/material/Drawer';
 
 
     const Search = styled('div')(({ theme }) => ({
@@ -60,9 +59,10 @@ import Drawer from '@mui/material/Drawer';
 
 
     export default function Header() {
-
-
     const {DrawerList, toggleDrawer, open} = Aside();
+        
+
+
 
     return (
         <Box sx={{ 
@@ -99,10 +99,6 @@ import Drawer from '@mui/material/Drawer';
             </Search>
         </Toolbar>
         </AppBar>
-        <Drawer open={open} onClose={toggleDrawer(false)}>
-        {DrawerList}
-        </Drawer>
-        
     </Box>
     
     );
