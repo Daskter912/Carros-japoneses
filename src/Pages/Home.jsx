@@ -4,11 +4,8 @@ import Aside from '../Componentes/Aside'
 
 export default function Home() {
   return (
-   <>
-   <Header></Header>
-   <Aside></Aside>
-
-   
-   </>
+      <>
+      <Header></Header>
+      </>
   )
 }

@@ -50,13 +50,5 @@ export default function Aside() {
         </Box>
     );
 
-    return (
-        <div>
-        <Button onClick={toggleDrawer(true)}>Open drawer</Button>
-        <Drawer open={open} onClose={toggleDrawer(false)}>
-            {DrawerList}
-        </Drawer>
-        </div>
-    
-    )  
-    }
+    return {DrawerList, toggleDrawer, open};
+     };

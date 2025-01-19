@@ -9,6 +9,9 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import Aside from './Aside';
+import Drawer from '@mui/material/Drawer';
+
 
     const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -52,8 +55,14 @@ import SearchIcon from '@mui/icons-material/Search';
     },
     }));
 
+    
+
+
 
     export default function Header() {
+
+
+    const {DrawerList, toggleDrawer, open} = Aside();
 
     return (
         <Box sx={{ 
@@ -67,6 +76,7 @@ import SearchIcon from '@mui/icons-material/Search';
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
+            onClick={toggleDrawer(true)}
             >
             <MenuIcon />
             </IconButton>
@@ -89,6 +99,11 @@ import SearchIcon from '@mui/icons-material/Search';
             </Search>
         </Toolbar>
         </AppBar>
+        <Drawer open={open} onClose={toggleDrawer(false)}>
+        {DrawerList}
+        </Drawer>
+        
     </Box>
+    
     );
     }
