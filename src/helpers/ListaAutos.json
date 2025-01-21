@@ -3,27 +3,28 @@
         {
             "id":1,
             "name":"Honda NSX",
-            "web":"https://www.reactjs.wiki/"
+            "description":"dddddddddddddddddddddddddddddddddddddddddddddddddddd",
+            "ima":"/src/assets/AcuraNS-XConcept1.jpg"
         },
         {
             "id":2,
             "name":"Honda Civic Type-R",
-            "web":"https//Angular.org"
+            "description":"https//Angular.org"
         },
         {
             "id":3,
             "name":"Mazda RX-7",
-            "web":"https//Vue.org"
+            "description":"https//Vue.org"
         },
         {
             "id":4,
             "name":"Mazda MX5",
-            "web":"https//polimer.org"
+            "description":"https//polimer.org"
         },
         {
             "id":5,
             "name":"Toyota Supra",
-            "web":"https//svelve.org"
+            "description":"https//svelve.org"
         }
     ]
 }
