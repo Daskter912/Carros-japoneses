@@ -6,25 +6,26 @@
             "description":"dddddddddddddddddddddddddddddddddddddddddddddddddddd",
             "ima":"/src/assets/AcuraNS-XConcept1.jpg"
         },
-        {
-            "id":2,
-            "name":"Honda Civic Type-R",
-            "description":"https//Angular.org"
-        },
+        
         {
             "id":3,
             "name":"Mazda RX-7",
-            "description":"https//Vue.org"
+            "description":"https//Vue.org",
+            "ima":"/src/assets/c909b8bdf9521f08fdafd3c3b8518cf7.jpg"
+
         },
         {
             "id":4,
             "name":"Mazda MX5",
-            "description":"https//polimer.org"
+            "description":"https//polimer.org",
+            "ima":"/src/assets/OIP.jpg"
+
         },
         {
             "id":5,
             "name":"Toyota Supra",
-            "description":"https//svelve.org"
+            "description":"https//svelve.org",
+            "ima":"/src/assets/R.jpg"
         }
     ]
 }

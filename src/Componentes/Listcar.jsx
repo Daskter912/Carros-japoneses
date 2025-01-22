@@ -13,16 +13,16 @@ export default function Listcar() {
   return (
     <Stack direction="row" spacing={2} >
     {ListaAutos.autos.map((ListaAuto) =>(
-    <Card sx={{ maxWidth: 345 }} key={ListaAuto}>
+    <Card sx={{ maxWidth: 400 }} key={ListaAuto}>
         <CardActionArea>
             <CardMedia
             component="img"
-            height="140"
+            height="200"
             image={ListaAuto.ima}
-            alt={ListaAuto.name}
             />
             <CardContent>
             <Typography gutterBottom variant="h5" component="div">
+            {ListaAuto.name}
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                 Lizards are a widespread group of squamate reptiles, with over 6,000

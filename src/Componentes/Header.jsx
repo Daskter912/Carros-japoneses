@@ -145,7 +145,7 @@ export default function Header() {
                 <Button
                     key={page}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: 'white', display: 'block' }}
+                    sx={{ my: 2, color: 'darkviolet', display: 'block' }}
                 >
                     {page}
                 </Button>
