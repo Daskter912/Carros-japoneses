@@ -7,11 +7,34 @@ import CardActionArea from '@mui/material/CardActionArea';
 import ListaAutos from '../helpers/ListaAutos.json'
 import { Box } from '@mui/material';
 import Stack from '@mui/material/Stack';
+import { styled } from '@mui/material/styles';
+
+
+
+const Item = styled( Card )(({ theme }) => ({
+    backgroundColor: '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    ...theme.applyStyles('dark', {
+      backgroundColor: '#1A2027',
+    }),
+  }));
+
 
 
 export default function Listcar() {
   return (
-    <Stack direction="row" spacing={2} >
+
+    <Stack 
+    direction="column" 
+    spacing={15}
+    sx={{ 
+        justifyContent: "flex-start",
+        alignItems: "flex-start",}} 
+   >
+    <Item> 
     {ListaAutos.autos.map((ListaAuto) =>(
     <Card sx={{ maxWidth: 400 }} key={ListaAuto}>
         <CardActionArea>
@@ -32,6 +55,7 @@ export default function Listcar() {
         </CardActionArea>
         </Card>  
     ))}    
+    </Item>
     </Stack>
     );
 }
