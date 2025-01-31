@@ -14,7 +14,7 @@ import { styled } from '@mui/material/styles';
 const Item = styled( Card )(({ theme }) => ({
     backgroundColor: '#fff',
     ...theme.typography.body2,
-    padding: theme.spacing(1),
+    padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
     ...theme.applyStyles('dark', {
@@ -29,13 +29,15 @@ export default function Listcar() {
 
     <Stack 
     direction="column" 
-    spacing={15}
+    spacing={8}
     sx={{ 
-        justifyContent: "flex-start",
-        alignItems: "flex-start",}} 
-   >
-    <Item> 
+      display:"flex",
+      alignItems:"center",
+      justifyContent:"center"
+      }}>
     {ListaAutos.autos.map((ListaAuto) =>(
+    <Item> 
+  
     <Card sx={{ maxWidth: 400 }} key={ListaAuto}>
         <CardActionArea>
             <CardMedia
@@ -53,9 +55,9 @@ export default function Listcar() {
             </Typography>
             </CardContent>
         </CardActionArea>
-        </Card>  
-    ))}    
-    </Item>
+        </Card>
+        </Item>  
+    ))} 
     </Stack>
     );
 }

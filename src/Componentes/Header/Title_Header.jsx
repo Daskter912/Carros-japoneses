@@ -1,5 +1,5 @@
 import React from 'react'
-import ListaAutos from '../helpers/ListaAutos.json'
+import ListaAutos from '../../helpers/ListaAutos.json'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -61,12 +61,9 @@ import TimeToLeaveIcon from '@mui/icons-material/TimeToLeave';
         },
     }));
 
-
-
-
 const pages = ['Marcas', 'Videos', 'Imagenes'];
 
-export default function Header() {
+export default function Title_Header() {
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
