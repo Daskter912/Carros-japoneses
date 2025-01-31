@@ -31,28 +31,48 @@ export default function Listcar() {
     direction="column" 
     spacing={8}
     sx={{ 
-      display:"flex",
-      alignItems:"center",
-      justifyContent:"center"
+     
       }}>
     {ListaAutos.autos.map((ListaAuto) =>(
     <Item> 
   
-    <Card sx={{ maxWidth: 400 }} key={ListaAuto}>
+    <Card key={ListaAuto}>
         <CardActionArea>
             <CardMedia
             component="img"
-            height="200"
+            sx={{height: 500, width: 800}}          
             image={ListaAuto.ima}
             />
-            <CardContent>
+            <CardContent sx={{  display:'flex', flexWrap:'wrap', justifyContent:"start" }}>
             <Typography gutterBottom variant="h5" component="div">
             {ListaAuto.name}
+            </Typography >
+            <Typography variant ="h5">
+              {ListaAuto.presentacion}
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                {ListaAuto.description}
             </Typography>
+            <Typography variant ="h5">
+              {ListaAuto.diseño}
+            </Typography>
+
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                {ListaAuto.deseñoDescripcion}
+            </Typography>
+            <Typography variant ="h5">
+              {ListaAuto.potencia}
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                {ListaAuto.potenciaDescripcion}
+            </Typography>
+            <Typography variant ="h5">
+              {ListaAuto.legadoo}
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                {ListaAuto.legado}
+            </Typography>
+           
             </CardContent>
         </CardActionArea>
         </Card>

@@ -10,15 +10,14 @@ import { Main } from '../Componentes/Main/Main'
 
 export default function Home() {
   return (
-    <>
-    <HeaderProvider  className='Header'   >
+    <div className='container'>
+    <HeaderProvider>
       <Header>
       <Title_Header>
       </Title_Header>
       </Header>
     </HeaderProvider>
-    
-    <MainProvider className='main' >
+    <MainProvider  >
       <Main>
         <Listcar>
         </Listcar>
@@ -29,7 +28,7 @@ export default function Home() {
     
     
     
-    </>
+    </div>
 
   )
 }

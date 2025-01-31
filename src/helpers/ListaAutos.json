@@ -3,8 +3,17 @@
         {
             "id":1,
             "name":"Honda NSX",
-            "description":"dddddddddddddddddddddddddddddddddddddddddddddddddddd",
-            "ima":"/src/assets/AcuraNS-XConcept1.jpg"
+            "presentacion":"Honda NSX: La Perfección del Rendimiento y la Elegancia",
+            "description":"Descubre el Honda NSX, una obra maestra de ingeniería y diseño que redefine el concepto de coche deportivo de lujo. Desde sus líneas aerodinámicas hasta su potente sistema híbrido, el NSX está diseñado para ofrecer una experiencia de conducción incomparable",
+            "ima":"/src/assets/AcuraNS-XConcept1.jpg",
+            "diseño":"Diseño Innovador",
+            "deseñoDescripcion":"El NSX destaca por su diseño aerodinámico y agresivo, que combina elegancia y deportividad en cada detalle. Su carrocería fluida y sus acabados meticulosamente cuidados no solo lo hacen atractivo, sino que también optimizan su rendimiento en carretera.",
+            "potencia":"Potencia Híbrida",
+            "potenciaDescripcion":"Equipado con un motor V6 biturbo de 3.5 litros y tres motores eléctricos, el Honda NSX produce una impresionante potencia de más de 570 caballos de fuerza. Su sistema híbrido avanzado proporciona una aceleración explosiva y una eficiencia energética excepcional.",
+            "legadoo": "Historia y Legado",
+            "legado":"Desde su lanzamiento inicial en 1990, el Honda NSX ha sido un icono de innovación y rendimiento. Su renacimiento en 2016 marcó una nueva era para los coches deportivos, manteniendo su legado de excelencia y avanzando hacia el futuro."
+            
+
         },
         
         {
