@@ -4,8 +4,11 @@ import Header from '../Componentes/Header/Title_Header'
 import { HeaderProvider } from '../Componentes/Header/HeaderProvider'
 import Title_Header from '../Componentes/Header/Title_Header'
 import { MainProvider } from '../Componentes/Main/MainProvider'
-import Listcar from '../Componentes/Main/Listcar'
+import Info_car from '../Componentes/Main/Info_car'
 import { Main } from '../Componentes/Main/Main'
+import Car_imagen from '../Componentes/Main/Car_imagen'
+import Tech_info from '../Componentes/Main/Tech_info'
+import Awar_car from '../Componentes/Main/Awar_car'
 
 
 export default function Home() {
@@ -19,8 +22,13 @@ export default function Home() {
     </HeaderProvider>
     <MainProvider  >
       <Main>
-        <Listcar>
-        </Listcar>
+        <Car_imagen></Car_imagen>
+        <Info_car></Info_car>
+        <Tech_info/>
+        <Awar_car/>
+
+
+        
       </Main>
     </MainProvider>
 

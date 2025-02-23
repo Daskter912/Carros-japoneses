@@ -9,6 +9,7 @@ body,html{
 }
 
 .container__item{
+  min-height: 100vh;
   gap: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr ;
@@ -25,16 +26,65 @@ body,html{
 }
 
 .main{
+  min-height: 100vh;
   grid-area: main;
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 150px 1fr 1fr 150px ;
+  grid-template-rows: 160px 400px 1fr  ;
+  grid-template-areas:
+  ". . . ."
+  ". car_Imagen info_car ."
+  ". tech_info awards ."
+  ;
   
-  justify-items: center;
 }
 
 
 
 .stack__Car{
-  width: 1250px;
+  grid-area: info_car;
+  align-self: center;
 }
+
+.car_Imagen {
+  grid-area: car_Imagen;
+  justify-items: center;
+  align-content: center;
+ 
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+
+}
+
+.tech_info{
+  grid-area: tech_info;
+
+}
+
+.awards{
+  grid-area: awards;
+}
+
+@media (width < 900px){
+
+
+
+  
+  .main{
+    min-height: 100vh;
+
+
+    grid-template-areas:
+  ". . . ."
+  ". car_Imagen . ."
+  ". tech_info . ."
+  ;
+
+  }
+  
+
+}
+
+
+

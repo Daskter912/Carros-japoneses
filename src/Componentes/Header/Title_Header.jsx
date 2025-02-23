@@ -61,7 +61,7 @@ import TimeToLeaveIcon from '@mui/icons-material/TimeToLeave';
         },
     }));
 
-const pages = ['Marcas', 'Videos', 'Imagenes'];
+const pages = ['Marcas', 'Videos'];
 
 export default function Title_Header() {
 
