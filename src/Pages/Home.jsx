@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css'
+import '../App.css'
 import Header from '../Componentes/Header/Title_Header'
 import { HeaderProvider } from '../Componentes/Header/HeaderProvider'
 import Title_Header from '../Componentes/Header/Title_Header'
@@ -10,7 +10,7 @@ import { Main } from '../Componentes/Main/Main'
 
 export default function Home() {
   return (
-    <div className='container'>
+    <div className='container__item'>
     <HeaderProvider>
       <Header>
       <Title_Header>

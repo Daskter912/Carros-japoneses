@@ -3,7 +3,7 @@ import React from 'react'
 
 const Main = ({children}) => {
   return (
-    <main className='main-content' >
+    <main className='main__item  main' >
         {children}
     </main>
   )

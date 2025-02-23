@@ -81,7 +81,7 @@ export default function Title_Header() {
     
 
     return (
-            <AppBar position="absolute" color="transparent"  >
+            <AppBar position="absolute" color="transparent" className='main__item  header'  >
         <Container maxWidth="xl">
             <Toolbar disableGutters>
             <TimeToLeaveIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

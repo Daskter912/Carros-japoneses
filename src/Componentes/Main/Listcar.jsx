@@ -8,6 +8,7 @@ import ListaAutos from '../../helpers/ListaAutos.json'
 import { Box } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
 
 
 
@@ -27,20 +28,14 @@ const Item = styled( Card )(({ theme }) => ({
 export default function Listcar() {
   return (
 
-    <Stack 
-    direction="column" 
-    spacing={8}
-    sx={{ 
-     
-      }}>
+   
+
+    <Box  className="main__item stack__Car"  >
     {ListaAutos.autos.map((ListaAuto) =>(
-    <Item> 
-  
-    <Card key={ListaAuto}>
-        <CardActionArea>
+    <Paper key={ListaAuto}  sx={{ margin:"20px"}}>
             <CardMedia
             component="img"
-            sx={{height: 500, width: 800}}          
+            sx={{ width: 600, justifySelf:"center" }}          
             image={ListaAuto.ima}
             />
             <CardContent sx={{  display:'flex', flexWrap:'wrap', justifyContent:"start" }}>
@@ -72,12 +67,9 @@ export default function Listcar() {
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                 {ListaAuto.legado}
             </Typography>
-           
             </CardContent>
-        </CardActionArea>
-        </Card>
-        </Item>  
+        </Paper>
     ))} 
-    </Stack>
+   </Box>
     );
 }
