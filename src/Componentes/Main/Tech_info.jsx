@@ -12,22 +12,14 @@ export default function Tech_info() {
   return (
     
     <Box  className="main__item tech_info"  >
-    <Paper   sx={{}}>
-            <CardContent sx={{  display:'flex', flexWrap:'wrap', justifyContent:"start" }}>
+        <Paper >
+            <CardContent sx={{  display:'flex', flexWrap:'wrap'}}>
             <Typography gutterBottom variant="h5" component="div">
-            {hondaNSX.name}
+            {hondaNSX.espec}
             </Typography >
-            <Typography variant ="h5">
-              {hondaNSX.presentacion}
-            </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                {hondaNSX.description}
-            </Typography>
-            <Typography variant ="h5">
-              {hondaNSX.legadoo}
-            </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                {hondaNSX.legado}
+            
+            <Typography variant="body2" sx={{ color: 'text.secondary',flexWrap:'wrap' }}>
+                {hondaNSX.especiciaciones}
             </Typography>
             </CardContent>
         </Paper>

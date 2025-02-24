@@ -29,9 +29,9 @@ body,html{
   min-height: 100vh;
   grid-area: main;
   display: grid;
-  gap: 10px;
-  grid-template-columns: 150px 1fr 1fr 150px ;
-  grid-template-rows: 160px 400px 1fr  ;
+  gap: 20px;
+  grid-template-columns: 350px 750px 900px 150px ;
+  grid-template-rows: 160px 400px 240px   ;
   grid-template-areas:
   ". . . ."
   ". car_Imagen info_car ."
@@ -45,6 +45,7 @@ body,html{
 .stack__Car{
   grid-area: info_car;
   align-self: center;
+  
 }
 
 .car_Imagen {
@@ -59,7 +60,7 @@ body,html{
 
 .tech_info{
   grid-area: tech_info;
-
+  height: 400px;
 }
 
 .awards{
