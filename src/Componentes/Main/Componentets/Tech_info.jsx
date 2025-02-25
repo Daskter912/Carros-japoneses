@@ -1,7 +1,7 @@
 import React from 'react'
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import ListaAutos from '../../helpers/ListaAutos.json'
+import ListaAutos from '../../../helpers/ListaAutos.json'
 import { Box } from '@mui/material';
 import Paper from '@mui/material/Paper';
 
@@ -12,7 +12,7 @@ export default function Tech_info() {
   return (
     
     <Box  className="main__item tech_info"  >
-        <Paper >
+        <Paper sx={{height:"660px"}} >
             <CardContent sx={{  display:'flex', flexWrap:'wrap'}}>
             <Typography gutterBottom variant="h5" component="div">
             {hondaNSX.espec}

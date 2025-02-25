@@ -2,7 +2,7 @@ body,html{
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(at 13.814868431089122% 36.55432836575234%, hsla(33.33333333333323, 100%, 98.23529411764707%, 1) 0%, hsla(33.33333333333323, 100%, 98.23529411764707%, 0) 100%), radial-gradient(at 26.757512289394448% 14.55716430928402%, hsla(201.99999999999997, 100%, 94.11764705882352%, 1) 0%, hsla(201.99999999999997, 100%, 94.11764705882352%, 0) 100%), radial-gradient(at 71.81123062379334% 73.35997062171711%, hsla(201.99999999999997, 100%, 94.11764705882352%, 1) 0%, hsla(201.99999999999997, 100%, 94.11764705882352%, 0) 100%), radial-gradient(at 80.67571417506147% 77.36934613667599%, hsla(33.33333333333323, 100%, 98.23529411764707%, 1) 0%, hsla(33.33333333333323, 100%, 98.23529411764707%, 0) 100%);            
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 
 
 
@@ -30,17 +30,15 @@ body,html{
   grid-area: main;
   display: grid;
   gap: 20px;
-  grid-template-columns: 350px 750px 900px 150px ;
+  grid-template-columns: 150px 750px 800px 400px 150px ;
   grid-template-rows: 160px 400px 240px   ;
   grid-template-areas:
-  ". . . ."
-  ". car_Imagen info_car ."
-  ". tech_info awards ."
+  ". . . . ."
+  ". car_Imagen info_car tech_info ."
+  ". .  awards tech_info ."
   ;
   
 }
-
-
 
 .stack__Car{
   grid-area: info_car;
@@ -52,30 +50,25 @@ body,html{
   grid-area: car_Imagen;
   justify-items: center;
   align-content: center;
- 
+  background: rgba(255, 255, 255, 0.342); /* Color blanco con transparencia */
   border-radius: 10px;
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
 
 }
 
 .tech_info{
   grid-area: tech_info;
-  height: 400px;
+  height: 800px;
 }
 
 .awards{
   grid-area: awards;
 }
 
+
+
 @media (width < 900px){
-
-
-
-  
-  .main{
+.main{
     min-height: 100vh;
-
-
     grid-template-areas:
   ". . . ."
   ". car_Imagen . ."

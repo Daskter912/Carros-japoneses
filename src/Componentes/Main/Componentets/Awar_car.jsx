@@ -1,7 +1,7 @@
 import React from 'react'
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import ListaAutos from '../../helpers/ListaAutos.json'
+import ListaAutos from '../../../helpers/ListaAutos.json'
 import { Box } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import Card from '@mui/material/Card';
