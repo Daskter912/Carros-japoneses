@@ -15,7 +15,7 @@ export default function Awar_car() {
 
   return (
     <Box  className="main__item awards"  >
-      <Card   sx={{height:"240px" }}>
+      <Card variant="elevation"  sx={{height:"240px" }}    >
           <CardContent sx={{  display:'flex', flexWrap:'wrap', justifyContent:"start" }}>
               <Typography gutterBottom variant="h5" component="div">
               {hondaNSX.logros}
