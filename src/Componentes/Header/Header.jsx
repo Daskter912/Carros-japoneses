@@ -8,11 +8,16 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { BrandContex } from '../../Context/UseContextBrand';
+import { useContext } from 'react';
 
 export default function Header() {
 
 
   const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const {marcas, Opselect, setOpselect} = useContext(BrandContex);
+
   
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -23,7 +28,7 @@ export default function Header() {
     setAnchorEl(null);
   };
 
-  
+
 
 
 
@@ -52,9 +57,11 @@ export default function Header() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        {marcas.map((marca) => (
+                <MenuItem key={marca} onClick={''}>
+                  <Typography sx={{ textAlign: 'center' }}>{marca}</Typography>
+                </MenuItem>
+              ))}
       </Menu>
 
       </Toolbar>

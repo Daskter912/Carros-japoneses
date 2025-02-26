@@ -7,7 +7,7 @@ const BrandContex =  createContext();
 
 const UseContextBrand = ({children}) => {
 
-const Marcas = ["Honda", "Suzuki", "Mazda" ];
+const marcas = ["Honda", "Suzuki", "Mazda" ];
 const [Opselect, setOpselect] = useState();
 
 
@@ -15,7 +15,7 @@ const [Opselect, setOpselect] = useState();
 
 
   return (
-    <BrandContex.Provider Value={{Marcas, Opselect, setOpselect   }} >
+    <BrandContex.Provider Value={{marcas, Opselect, setOpselect   }} >
         {children}
     </BrandContex.Provider>
    
