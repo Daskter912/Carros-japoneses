@@ -9,6 +9,7 @@ import Card from '@mui/material/Card';
 
 
 export default function Info_car() {
+
   const hondaNSX = ListaAutos.autos.find(auto => auto.name === "Honda NSX");
 
   return (

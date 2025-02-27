@@ -9,9 +9,8 @@ import Card from '@mui/material/Card';
 
 
 export default function Awar_car() {
+
     const hondaNSX = ListaAutos.autos.find(auto => auto.name === "Honda NSX");
-
-
 
   return (
     <Box  className="main__item awards"  >

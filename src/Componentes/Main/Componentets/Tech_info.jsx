@@ -9,7 +9,7 @@ import Paper from '@mui/material/Paper';
 export default function Tech_info() {
     const hondaNSX = ListaAutos.autos.find(auto => auto.name === "Honda NSX");
 
-  return (
+return (
     
     <Box  className="main__item tech_info"  >
         <Paper sx={{height:"660px"}} >

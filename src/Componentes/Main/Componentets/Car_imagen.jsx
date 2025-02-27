@@ -12,9 +12,6 @@ import ListaAutos from '../../../helpers/ListaAutos.json'
 export default function Car_imagen() {
     const hondaNSX = ListaAutos.autos.find(auto => auto.name === "Honda NSX");
 
-
-
-
   return (
    <Box className ="main__item car_Imagen" >
         <Card sx={{width: 600 }}>
