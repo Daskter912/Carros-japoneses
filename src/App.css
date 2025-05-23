@@ -1,11 +1,18 @@
 body,html{
   padding: 0;
+  font-family: 'Kalam', cursive;
+
   margin: 0;
   min-height: 100vh;
-  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  background: hsla(212, 35%, 58%, 1); 
 
-
-
+  background: linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6D90B9", endColorstr="#BBC7DC", GradientType=1 );
 }
 
 .container__item{
@@ -35,7 +42,7 @@ body,html{
   grid-template-areas:
   ". . . . ."
   ". car_Imagen info_car tech_info ."
-  ". .  awards tech_info ."
+  ".  car_Imagen awards tech_info ."
   ;
   
 }

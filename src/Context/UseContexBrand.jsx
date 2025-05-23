@@ -7,7 +7,7 @@ const BrandContext =  createContext();
 const UseContexBrand = ({children}) => {
 
 
-    const marcas = ["Honda", "Suzuki", "Mazda", "Nissan", "Subaru", "Mitsubishi " ];
+    const marcas = ["Honda", "Suzuki", "Mazda", "Nissan", "Subaru", "Mitsubishi "];
     const [Opselect, setOpselect] = useState();
 
 

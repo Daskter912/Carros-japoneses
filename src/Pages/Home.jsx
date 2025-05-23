@@ -11,7 +11,6 @@ import { UseContexBrand } from '../Context/UseContexBrand'
 
 
 
-
 export default function Home() {
   return (
     <div className='container__item'>
